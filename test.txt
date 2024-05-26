@@ -1,1 +1,9 @@
 Testing the version control
+
+Execute site:
+Terminal 1: Visualise frontend changes
+> npm run dev
+
+Terminal 2:
+> php artisan serve
+
