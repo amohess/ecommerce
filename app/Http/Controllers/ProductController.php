@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+
 class ProductController extends Controller
 {
     public function index()
     {
-        return view('pages.default.productspage');
+        // $product_data = Product::all();
+        $product_data = Product::withPrice()->get();
+
+        // return view('pages.default.productspage');
+        return view('pages.testing.productspage', compact('product_data'));
     }
 }
