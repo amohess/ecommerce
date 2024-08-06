@@ -17,7 +17,7 @@ class Product extends Model
 
     public function scopeSingleProduct($query, string $id)
     {
-        $query->where('product.id', $id);
+        $query->where('products.id', $id);
     }
 
     public function getImage()

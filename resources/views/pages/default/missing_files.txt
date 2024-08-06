@@ -1,8 +1,0 @@
-folder is currently missing files:
-
-cartpage.blade.php
-checkout-seccessfulpage.blade.php
-checkoutpage.blade.php
-detailspage.blade.php
-homepage.blade.php
-productspage.blade.php

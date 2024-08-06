@@ -1,5 +1,7 @@
 Testing the version control
 
+> Run largon
+
 Execute site:
 Terminal 1: Visualise frontend changes
 > npm run dev
@@ -7,3 +9,6 @@ Terminal 1: Visualise frontend changes
 Terminal 2:
 > php artisan serve
 
+phpMyAdmin
+Username: root
+Password:
