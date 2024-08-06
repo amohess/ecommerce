@@ -11,6 +11,7 @@ class DetailController extends Controller
         // $data = Product::findorFail($id);
         $data = Product::singleProduct($id)->withPrice()->get()->first();
 
-        return view('pages.testing.detailspage', compact('data'));
+        // return view('pages.testing.detailspage', compact('data'));
+        return view('pages.default.detailspage', compact('data'));
     }
 }

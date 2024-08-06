@@ -19,8 +19,8 @@
                 <input type="hidden" name="product_id" value="{{ $data->id }}">
             </form>
 
-            <p>${{ $data->short_description }}</p>
-            <p>${{ $data->full_description }}</p>
+            <p>{{ $data->short_description }}</p>
+            <p>{{ $data->full_description }}</p>
             {{-- <p><a href="{{ $data->getLink($data->id) }}">View</a></p> --}}
         </div>
 
