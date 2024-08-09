@@ -3,7 +3,7 @@
 
     <h1>Cart Page</h1>
 
-    @if($cart_data->isEmpty())
+    @if ($cart_data->isEmpty())
     <x-core.cart-empty />
     @else
 
@@ -29,9 +29,10 @@
         @endforeach
 
     </div>
-    @endif
 
     <p>Cart Subtotal: ${{ $cart_data->getSubtotal() }}</p>
     <p>Cart Total: ${{ $cart_data->getTotal() }}</p>
+
+    @endif
 
 </x-mylayouts.layout-default>
