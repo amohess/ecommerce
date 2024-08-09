@@ -3,15 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
     public function index()
     {
+        $user = Auth::user();
         // $product_data = Product::all();
-        $product_data = Product::withPrice()->get();
+        $cart_data = $user->products()->withPrices()->get();
 
-        // return view('pages.default.cartpage', compact('product_data'));
-        return view('pages.testing.cartpage', compact('product_data'));
+        // dd($cart_data);
+
+        // return view('pages.default.cartpage', compact('cart_data'));
+        return view('pages.testing.cartpage', compact('cart_data'));
     }
 }
