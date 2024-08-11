@@ -5,11 +5,28 @@ namespace App\Http\Controllers;
 use App\Helpers\ShippingHelper;
 use App\Helpers\StripeCheckout;
 use App\Models\Order;
+use App\Models\OrderProduct;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class CheckoutPaymentController extends Controller
 {
-    public function index()
+    // custom script to generate random and unique number
+    public function generateUniqueOrderNo()
+    {
+        $orderNo = 'ORD-2024-'.Str::upper(Str::random(6));
+
+        // Check if the generated order number already exists in the database
+        while (DB::table('orders')->where('order_no', $orderNo)->exists()) {
+            // And regenerate if it does exist
+            $orderNo = 'ORD-2024-'.Str::upper(Str::random(6));
+        }
+
+        return $orderNo;
+    }
+
+    public function index($payment)
     {
         // get the logged in user
         $user = Auth::user();
@@ -29,8 +46,57 @@ class CheckoutPaymentController extends Controller
             dd('Cart is empty');
         }
 
-        // if ($cart_data->isNotEmpty()) {
-        //     dd('Cart is NOT empty');
-        // }
+        // determining if stripe payment or defauly payment is being used
+        switch ($payment) {
+            case 'value':
+                // code...
+                break;
+
+            default:
+                $insert_data = [
+                    'payment_provider' => 'testing',
+                    'payment_id' => 'testing',
+                ];
+                $completed = true;
+                break;
+        }
+
+        // check if payment was completed and $insert_data is not empty
+        if (!$completed && empty($insert_data)) {
+            dd('Payment incomplete or checkout data is missing.');
+        }
+
+        // inserts values into the order table
+        $order->user_id = $user->id;
+        // $order->order_no = 'ORD-2024-'.Str::RANDOM(6);
+        $order->order_no = $this->generateUniqueOrderNo();
+        $order->subtotal = $cart_data->getSubtotal();
+        $order->total = $cart_data->getTotal();
+        $order->payment_provider = $insert_data['payment_provider'];
+        $order->payment_id = $insert_data['payment_id'];
+        $order->shipping_id = 1;
+        $order->shipping_address_id = 1;
+        $order->billing_address_id = 1;
+        $order->payment_status = 'unpaid';
+        $order->save();
+
+        // for each record in the cart, create an orderProduct table with related variables
+        $records = [];
+        foreach ($cart_data as $data) {
+            array_push($records,
+                new OrderProduct([
+                'product_id' => $data->id,
+                'user_id' => $user->id,
+                'price' => $data->getPrice(),
+                'quantity' => $data->pivot->quantity,
+                ]));
+        }
+
+        $order->order_products()->saveMany($records);
+
+        if ($payment == 'stripe') {
+            return redirect($stripe_checkout->getUrl());
+        }
+        dd('Payment Successful during test');
     }
 }
