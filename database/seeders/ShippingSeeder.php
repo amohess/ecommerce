@@ -13,29 +13,29 @@ class ShippingSeeder extends Seeder
      */
     public function run(): void
     {
-        // TODO: Add stripe shipping id for express
+        // Uses stripe data, only requiring stripe_id.
         DB::table('shipping')->insert([
             [
-                'title' => 'Shipping Option 1',
+                'title' => 'Standard Shipping',
                 'price' => 10,
                 'days' => 3,
-                'stripe_id' => 'YOUR_SHIPPING_ID',
+                'stripe_id' => 'shr_1PnBEVRsmKk4HBB5ti2nbJIW',
                 'display_order' => 5,
                 'created_at' => Carbon::now(),
             ],
             [
-                'title' => 'SHIPPING OPTION 2',
+                'title' => 'Priority Shipping',
                 'price' => 0,
                 'days' => 1,
-                'stripe_id' => 'YOUR_SHIPPING_ID',
+                'stripe_id' => 'shr_1PnBQzRsmKk4HBB5B3vSH7rB',
                 'display_order' => 6,
                 'created_at' => Carbon::now(),
             ],
             [
-                'title' => 'SHIPPING OPTION 3',
+                'title' => 'Free Express Shipping',
                 'price' => 0,
                 'days' => 1,
-                'stripe_id' => 'YOUR_SHIPPING_ID',
+                'stripe_id' => 'shr_1PnBPHRsmKk4HBB53nxIMklJ',
                 'display_order' => 1,
                 'created_at' => Carbon::now(),
             ],

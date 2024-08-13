@@ -6,6 +6,8 @@ use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ProductController;
+// use App\Http\Controllers\subscriptions\SubscriptionController;
+// use App\Http\Controllers\subscriptions\UserSubscriptionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +35,8 @@ Route::get('/products', [ProductController::class, 'index'])->name('store.index'
 
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.details');
 
+// Route::get('subscriptions', [SubscriptionController::class, 'index'])->name('subscriptions.index');
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 
@@ -51,4 +55,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/checkout/{payment}/testing', [CheckoutPaymentController::class, 'index'])->name('checkout.success.testing');
 
     Route::get('/checkout/success/{id}', [CheckoutSuccessController::class, 'index'])->name('checkout.success');
+
+    // Route::post('subscriptions/{id}', [SubscriptionController::class, 'puchase'])->name('subscriptions.purchase');
+
+    // Route::get('subscriptions/success/{id}', [SubscriptionController::class, 'success'])->name('subscriptions.success');
 });
+
+/*
+Route::prefix('user')->middleware(['auth'])->group(function () {
+    Route::get('/subscriptions', [UserSubscriptionController::class, 'index'])->name('subscriptions.index');
+    Route::delete('/subscriptions/{id}', [UserSubscriptionController::class, 'destroy'])->name('subscriptions.destroy');
+    Route::put('/subscriptions/{id}', [UserSubscriptionController::class, 'update'])->name('subscriptions.update');
+});
+*/

@@ -25,26 +25,46 @@ class StripeCheckout
     /**
      * ==================== MANDATORY FUNCTIONS TO CREATE CHECKOUT SESSION ===========================.
      */
+    // Information used to begin the session.
     public function startCheckoutSession()
     {
         $YOUR_DOMAIN = url('');
         $this->stripe_checkout_data = [
             'mode' => 'payment',
-            'success_url' => $YOUR_DOMAIN.'/checkout/success'.self::URL_ID,
+            'success_url' => $YOUR_DOMAIN.'/checkout/success/'.self::URL_ID,
             'cancel_url' => $YOUR_DOMAIN.'/checkout',
-          ];
+        ];
     }
 
+    // Checks all the items in the cart and retrieves information.
     public function addProducts(Collection $products_data)
     {
-        return false;
+        $line_items = [];
+        foreach ($products_data as $data) {
+            $line_items[] = [
+                'price_data' => [
+                    'currency' => 'usd',
+                    'product_data' => [
+                        'name' => $data->title,
+                        'images' => ['https://img.freepik.com/free-photo/shopping-cart-front-side_187299-40118.jpg?w=826&t=st=1694476992~exp=1694477592~hmac=ed69117d05f541bbc1b719146a75df3ceba0afeef9797d4bafb4c4faaa90437d'],
+                    ],
+                    'unit_amount' => $data->getPrice() * 100,
+                ],
+                'quantity' => $data->pivot->quantity,
+            ];
+            $this->stripe_checkout_data['line_items'] = $line_items;
+        }
     }
 
+    // Stripe session is created.
     public function createSession()
     {
-        return false;
+        header('Content-Type: application/json');
+        $this->checkout_session = $this->stripe->checkout->sessions->create($this->stripe_checkout_data);
+        header('HTTP/1.1 303 See Other');
     }
 
+    // Referencing the link used for stripe to retrieve the information.
     public function getUrl()
     {
         return $this->checkout_session->url;
@@ -53,6 +73,7 @@ class StripeCheckout
     /**
      * ==================== OPTIONAL FUNCTIONS TO ADD TO CHECKOUT SESSION ===========================.
      */
+    // Add the user's email by default
     public function addEmail($email)
     {
         $this->stripe_checkout_data['customer_email'] = $email;
@@ -63,6 +84,7 @@ class StripeCheckout
         return false;
     }
 
+    // Allows the user to enter coupon codes if none already applies.
     public function enablePromoCodes()
     {
         if ($this->coupon_used) {
@@ -74,7 +96,11 @@ class StripeCheckout
 
     public function addShippingOptions(Collection $shipping_data)
     {
-        return false;
+        $shipping_options = [];
+        foreach ($shipping_data as $data) {
+            $shipping_options[] = ['shipping_rate' => $data->stripe_id];
+        }
+        $this->stripe_checkout_data['shipping_options'] = $shipping_options;
     }
 
     /**
@@ -95,11 +121,18 @@ class StripeCheckout
      */
     public function getOrderCreateData()
     {
-        return false;
+        return [
+            'payment_provider' => 'stripe',
+            'payment_id' => $this->checkout_session->id,
+        ];
     }
 
     public function getOrderCompletedData($checkout_session)
     {
-        return false;
+        return [
+            'subtotal' => $checkout_session->amount_subtotal / 100,
+            'total' => $checkout_session->amount_total / 100,
+            'shipping_id' => 1,
+        ];
     }
 } // end Class

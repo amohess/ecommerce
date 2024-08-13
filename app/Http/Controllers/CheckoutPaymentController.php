@@ -46,10 +46,19 @@ class CheckoutPaymentController extends Controller
             dd('Cart is empty');
         }
 
-        // determining if stripe payment or defauly payment is being used
+        // determining if stripe payment or default payment is being used
         switch ($payment) {
-            case 'value':
-                // code...
+            case 'stripe':
+                $stripe_checkout->startCheckoutSession(); // Prepares the stripe checkout page.
+                $stripe_checkout->addEmail($user->email); // Automatically gets the user's email.
+                $stripe_checkout->addProducts($cart_data); // Identifies what products are shown on the page.
+                $stripe_checkout->enablePromoCodes(); // Adds promo codes.
+                $shipping_data = $shipping_helper->getGroupShippingOptions(); // References the available shipping options.
+                $stripe_checkout->addShippingOptions($shipping_data); // Populate the identified options.
+                $stripe_checkout->createSession();
+                $insert_data = $stripe_checkout->getOrderCreateData();
+                $completed = true;
+
                 break;
 
             default:
@@ -85,10 +94,10 @@ class CheckoutPaymentController extends Controller
         foreach ($cart_data as $data) {
             array_push($records,
                 new OrderProduct([
-                'product_id' => $data->id,
-                'user_id' => $user->id,
-                'price' => $data->getPrice(),
-                'quantity' => $data->pivot->quantity,
+                    'product_id' => $data->id,
+                    'user_id' => $user->id,
+                    'price' => $data->getPrice(),
+                    'quantity' => $data->pivot->quantity,
                 ]));
         }
 

@@ -1,5 +1,7 @@
-<x-mylayouts.layouts-default>
+<x-mylayouts.layout-default>
 
     <h1>Checkout Page</h1>
 
-</x-mylayouts.layouts-default>
+    <x-core.stripe-ui />>
+
+</x-mylayouts.layout-default>

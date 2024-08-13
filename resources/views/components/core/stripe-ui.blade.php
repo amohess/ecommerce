@@ -1,3 +1,4 @@
-<div>
-    <!-- Life is available only in the present moment. - Thich Nhat Hanh -->
-</div>
+<form action="{{ route('checkout.stripe', ['payment' => 'stripe']) }}" method="POST">
+    @csrf
+    <button class="btn btn-primary py-3 px-4" type="submit">Checkout</button>
+</form>
