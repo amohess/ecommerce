@@ -22,6 +22,7 @@ class CheckoutController extends Controller
         $shipping_helper = new ShippingHelper();
         $shipping_data = $shipping_helper->getGroupShippingOptions($group_ids);
 
-        return view('pages.testing.checkoutpage', compact('cart_data', 'shipping_data'));
+        // return view('pages.testing.checkoutpage', compact('cart_data', 'shipping_data'));
+        return view('pages.default.checkoutpage', compact('cart_data', 'shipping_data'));
     }
 }
