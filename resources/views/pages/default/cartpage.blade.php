@@ -96,6 +96,7 @@
                         <p class="d-flex">
                             <span>Subtotal</span>
                             <span>${{ CustomHelper::formatPrice($cart_data->getSubtotal()) }}</span>
+                            {{-- <span>${{ $cart_data->getSubtotal() }}</span> --}}
                         </p>
 
                         <hr>
@@ -103,10 +104,10 @@
                             <span>Standard Shipping</span>
                             <span>+$10.00</span>
                         </p>
-                        <p class="d-flex">
+                        {{-- <p class="d-flex">
                             <span>Express Shipping</span>
                             <span>+$13.00</span>
-                        </p>
+                        </p> --}}
 
                         {{-- <p class="d-flex total-price">
                             <span>Total</span>

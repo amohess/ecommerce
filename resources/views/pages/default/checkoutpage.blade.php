@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="postcodezip">Postcode / ZIP *</label>
+                                    <label for="postcodezip">Postcode / ZIP</label>
                                     <input type="text" class="form-control" placeholder="">
                                 </div>
                             </div>
@@ -98,14 +98,14 @@
                                     <span>Subtotal</span>
                                     <span>${{ $cart_data->getSubtotal() }}</span>
                                 </p>
-                                <p class="d-flex">
+                                {{-- <p class="d-flex">
                                     <span>Delivery</span>
                                     <span>$0.00</span>
                                 </p>
                                 <p class="d-flex">
                                     <span>Discount</span>
                                     <span>$3.00</span>
-                                </p>
+                                </p> --}}
                                 <hr>
                                 <p class="d-flex total-price">
                                     <span>Total</span>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="cart-detail bg-light p-3 p-md-4">
-                                <h3 class="billing-heading mb-4">Payment Method</h3>
+                                {{-- <h3 class="billing-heading mb-4">Payment Method</h3>
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="radio">
@@ -138,7 +138,7 @@
                                             <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="checkbox">
@@ -149,7 +149,7 @@
                                 </div>
                                 {{-- <p><a href="#" class="btn btn-primary py-3 px-4">Place an order</a></p> --}}
 
-                                <x-core.stripe-ui />>
+                                <x-core.stripe-ui />
                             </div>
                         </div>
                     </div>
