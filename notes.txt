@@ -14,8 +14,16 @@ Stripe - https://dashboard.stripe.com/test/coupons
 
 CREDENTIALS
 phpMyAdmin
+<<<<<<< HEAD
     Username: root
     Password:
+=======
+Username: root
+Password:
+
+
+
+>>>>>>> 4cff2c3f73be3a5f4af56ccc87da6595921617ea
 
 
 PENDING TASKS - https://drive.google.com/drive/u/1/folders/1d0QkUry3lyVn-WxEOwiXCkdUK6beGAkt
