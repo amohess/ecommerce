@@ -1,7 +1,3 @@
-STATUS
-Branch 1: Keeping the template due to current time restrictions but with aims to make changes to make somewhat unique.
-
-
 STEPS TO EXECUTE WEBSITE
 Run largon
 Terminal 1: Visualise frontend changes
