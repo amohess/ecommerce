@@ -12,3 +12,25 @@ Terminal 2:
 phpMyAdmin
 Username: root
 Password:
+
+
+
+
+
+PENDING TASKS - https://drive.google.com/drive/u/1/folders/1d0QkUry3lyVn-WxEOwiXCkdUK6beGAkt
+O Change Products to art pieces
+O Add advanced functionalities
+    > PENDING
+    O Chatbot
+    O Order history and order details
+    O Search, sort, filter
+    O Email functionality - verify registration from inbox, checkout success email
+    O Admin manage products
+        >> POSSIBLE OPTIONS
+        o Recommended products, featured products, etc
+        O Reviews and ratings
+        O Loyalty points
+        O Subscriptions
+    > COMPLETED
+    0 Gamification using coupon codes (done but needs final touches)
+O Change template (maybe)
