@@ -132,7 +132,7 @@ class StripeCheckout
         return [
             'subtotal' => $checkout_session->amount_subtotal / 100,
             'total' => $checkout_session->amount_total / 100,
-            'shipping_id' => 1,
+            'stripe_id' => $checkout_session->shipping_cost->shipping_rate,
         ];
     }
 } // end Class
