@@ -10,6 +10,7 @@ REQUIRED LINKS
 Store Page - http://localhost:8000/store
 Database - http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=ecommerce&table=orders
 Stripe - https://dashboard.stripe.com/test/coupons
+Chatbot - https://app.intelliticks.com/v2/settings/channels/website
 
 
 CREDENTIALS
@@ -22,7 +23,7 @@ PENDING TASKS - https://drive.google.com/drive/u/1/folders/1d0QkUry3lyVn-WxEOwiX
 O Change Products to art pieces
 O Add advanced functionalities
     > PENDING
-    O Chatbot
+    X Chatbot
     O Order history and order details
     O Search, sort, filter
     O Email functionality - verify registration from inbox, checkout success email
