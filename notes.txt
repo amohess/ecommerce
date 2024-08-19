@@ -21,11 +21,14 @@ phpMyAdmin
 
 PENDING TASKS - https://drive.google.com/drive/u/1/folders/1d0QkUry3lyVn-WxEOwiXCkdUK6beGAkt
 O Change Products to art pieces
+O Customise template
+    -> C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\resources\views\components\core\products-filter.blade.php
+    -> C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\resources\views\pages\default\productspage.blade.php
 O Add advanced functionalities
     > PENDING
     X Chatbot
-    O Order history and order details
-    O Search, sort, filter
+    X Order history and order details
+    X Search, sort, filter
     O Email functionality - verify registration from inbox, checkout success email
     O Admin manage products
         >> POSSIBLE OPTIONS
