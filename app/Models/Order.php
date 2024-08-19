@@ -18,7 +18,7 @@ class Order extends Model
     {
         return $this->belongsToMany(Product::class, 'order_products')
         ->withPivot('id', 'product_id', 'user_id', 'quantity')
-        ->withTimestamp()
+        ->withTimestamps()
         ;
     }
 
@@ -28,5 +28,10 @@ class Order extends Model
     public function order_products(): HasMany
     {
         return $this->hasMany(OrderProduct::class, 'order_id');
+    }
+
+    public function scopePaidOrders($query, $status = 'paid')
+    {
+        $query->where('payment_status', $status);
     }
 }

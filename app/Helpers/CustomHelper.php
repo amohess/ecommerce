@@ -11,8 +11,8 @@ class CustomHelper
         return number_format($price, 2, '.', '');
     }
 
-    // public static function dateToReadable($date)
-    // {
-    //     return Carbon::createFromFormat('Y-m-d H:i:s', $date)->format;
-    // }
+    public static function dateToReadable($date)
+    {
+        return Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('F j, Y, g:i a');
+    }
 }
