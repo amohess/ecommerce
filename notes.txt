@@ -11,6 +11,7 @@ Store Page - http://localhost:8000/store
 Database - http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=ecommerce&table=orders
 Stripe - https://dashboard.stripe.com/test/coupons
 Chatbot - https://app.intelliticks.com/v2/settings/channels/website
+Mailtrap - https://mailtrap.io/inboxes/3085930/messages
 
 
 CREDENTIALS
@@ -29,7 +30,8 @@ O Add advanced functionalities
     X Chatbot
     X Order history and order details
     X Search, sort, filter
-    O Email functionality - verify registration from inbox, checkout success email
+    X Email functionality - verify registration from inbox, checkout success email
+        http://localhost:8000/mail-testing
     O Admin manage products
         >> POSSIBLE OPTIONS
         o Recommended products, featured products, etc

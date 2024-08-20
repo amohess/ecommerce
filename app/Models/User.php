@@ -2,16 +2,15 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Stripe\Subscription;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
     use HasFactory;
@@ -75,26 +74,6 @@ class User extends Authenticatable
     {
         return $this->hasMany(Order::class);
     }
-
-    /**
-     * The activeSubscriptions that belong to the User.
-     */
-    // public function activeSubscriptions(): BelongsToMany
-    // {
-    //     return $this->belongsToMany(Subscription::class, 'subscription_orders')
-    //     ->withPivot('id', 'group_id', 'checkout_id', 'checkout_subscription_id', 'status', 'cancel_at', 'payment_status')
-    //     ->where(function (Builder $query) {
-    //         $query->where('status', 'active')
-    //         ->orWhere(function (Builder $query) {
-    //             $query->where('status', 'pending_cancel')
-    //             ->where('cancel_at', '>', now())
-    //             ;
-    //         });
-    //     })
-    //     ->withTimestamps()
-    //     ->reorder('created_at', 'desc')
-    //     ;
-    // }
 
     // --------------- FUNCTION ---------------
     public function getGroups(): array

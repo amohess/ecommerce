@@ -5,9 +5,10 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\DetailController;
-use App\Http\Controllers\OrderHistoryController;
+use App\Http\Controllers\MailController;
 // use App\Http\Controllers\subscriptions\SubscriptionController;
 // use App\Http\Controllers\subscriptions\UserSubscriptionController;
+use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -23,7 +24,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes([
+    'verify' => true,
+]);
 
 // Route to view the home page
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -41,7 +44,7 @@ Route::get('/products', [ProductController::class, 'index'])->name('store.index'
 // Route to view the product details
 Route::get('/details/{id}', [DetailController::class, 'index'])->name('shop.details');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     // Route to load the cart page
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 
@@ -74,4 +77,6 @@ Route::middleware(['auth'])->group(function () {
 
     // Route to show details for an order
     Route::get('/order-history/{id}', [OrderHistoryController::class, 'show'])->name('order-history.show');
+
+    Route::get('/mail-testing', [MailController::class, 'index']);
 });
