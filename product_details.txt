@@ -1,0 +1,231 @@
+id                  :
+image name          :
+title               :
+short description   :
+full description    :
+price ($TTD)        :
+category            :
+
+
+id                  : 1
+image name          : aggro_who.jpg
+title               : Aggro Who
+short description   : Alana Abdool
+full description    : The primal intensity of a predator's gaze, with vibrant red eyes that burn with untamed fury, drawing you into the depths of its wild spirit. The minimalist strokes of the feathers contrast sharply with the piercing detail of the owl's stare, creating a powerful tension between raw emotion and abstract simplicity.
+price ($TTD)        : 200
+category            : acrylic
+
+
+id                  : 2
+image name          : alien_lands.jpg
+title               : Alien Lands
+short description   : Céléna Espinoza
+full description    : Against a vibrant purple sky, slender trees stretch upwards, their dark forms etched like delicate shadows. The blotched leaves add a touch of whimsy, while the light shrubbery and serene lake at the bottom ground the scene in a tranquil yet mysterious beauty, as if nature itself is whispering secrets in twilight hues.
+price ($TTD)        : 530
+category            : acrylic
+
+
+id                  : 3
+image name          : armor.jpg
+title               : Armor
+short description   : Alana Abdool
+full description    : A transformatiopn of the humble rooster into a noble warrior, clad in intricately detailed knight's armor that shimmers with every stroke of the pen. The sharp, deliberate lines give life to this proud and regal figure, standing tall with the confidence of a battle-hardened hero, ready to defend its realm with courage and honor.
+price ($TTD)        : 150
+category            : penAndInk
+
+
+id                  : 4
+image name          : butterflies.jpg
+title               : Pollination
+short description   : Shannon Yip-Ying
+full description    : A harmonious dance of earthy greens, browns, and oranges brings these butterflies to life as they gracefully orbit around delicate pink flowers. The thin green leaves weave through the scene, creating a serene, almost hypnotic rhythm that evokes the gentle balance of nature’s palette in full bloom.
+price ($TTD)        : 420
+category            : acrylic
+
+
+id                  : 5
+image name          : camouflage.jpg
+title               : Camoflage
+short description   : Alana Abdool
+full description    : This mixedMedia chameleon emerges from the canvas, a mesmerizing blend of textured wood, vibrant acrylic, and entwined twine. The wooden pieces meticulously accentuate the creature’s form, adding a tactile dimension as it clings to a simple brown branch, all set against a stark black background. The result is a striking fusion of natural materials and artistic vision, capturing the chameleon’s stealth and adaptability in a tangible, sculptural form.
+price ($TTD)        : 580
+category            : mixedMedia
+
+
+id                  : 6
+image name          : cat_and_butterfly.jpg
+title               : Peace
+short description   : Shannon Yip-Ying
+full description    : In this tender drawing, a cat and butterfly defy their natural instincts, gently touching noses in a moment of fragile harmony. The scene captures a fleeting truce between predator and prey, where curiosity overcomes instinct, and the delicate balance of nature is momentarily paused in a quiet exchange of trust.
+price ($TTD)        : 140
+category            : sketchwork
+
+
+id                  : 7
+image name          : dulahin.jpg
+title               : Dulahin
+short description   : Céléna Espinoza
+full description    : Adorned in a vibrant pink and blue sari, this Indian bride radiates grace and tradition, her bangles jingling softly with each movement. The delicate chain around her neck glistens, while the sindoor on her forehead marks her as a newlywed dulahin, symbolizing love and devotion in a moment of timeless beauty.
+price ($TTD)        : 250
+category            : waterclour
+
+
+id                  : 8
+image name          : ella.jpg
+title               : Ella Finalmente Cree
+short description   : Caiphus Moore
+full description    : The carefree joy of a young woman can be seen as she blows bubbles, her expression a mix of concentration and delight, embodying a fleeting attempt at the youthful innocence and wonder she once had.
+price ($TTD)        : 1400
+category            : sketchwork
+
+
+id                  : 9
+image name          : fancy_gentleman.jpg
+title               : Fancy Gentleman
+short description   : Alana Abdool
+full description    : A portrayal of a sophisticated cat, its long whiskers elegantly framing a face marked by a sly, witty expression. Clad in a dapper tuxedo and bow tie, topped with a classic black top hat, the feline exudes an air of refined charm and playful cunning, as if ready to charm and outwit with a mere glance.
+price ($TTD)        : 250
+category            : penAndInk
+
+
+id                  : 11
+image name          : forest.jpg
+title               : Stream Overlook
+short description   : Anonymous
+full description    : An offering of a breathtaking view from a bamboo bridge, spanning a large, meandering river that cascades into distant rapids. Nestled in a valley framed by rugged brown stone cliffs, the scene captures the untamed beauty of nature, with distant trees peeking out from the corners, adding a touch of serene contrast to the powerful flow of the river.
+price ($TTD)        : 830
+category            : colourPencil
+
+
+id                  : 12
+image name          : hill_house.jpg
+title               : Hill House
+short description   : Anonymous
+full description    : This landscape  beautifully captures the dramatic cliffs, where small water streams cascade gracefully down the rugged face, their descent culminating in the vast ocean to the right. Towering trees crown the cliff, framing a quaint, distant house that hints at solitude amidst nature’s grandeur. A seagull, poised in the foreground, adds a touch of life and movement to the serene, coastal vista.
+price ($TTD)        : 490
+category            : watercolour
+
+
+id                  : 13
+image name          : lake_tree.jpg
+title               : Lake Tree
+short description   : Anonymous
+full description    : In this vibrant , a serene pond mirrors the burnt yellow foliage of a majestic tree that stands sentinel by its edge. The water's edge is bathed in rich blues and purples, creating a striking contrast with the expansive savannah in the background, where tall trees punctuate the horizon with a sense of distant grandeur. The multitude of colors blends harmoniously, evoking a tranquil yet dynamic landscape that celebrates nature's diverse palette.
+price ($TTD)        : 175
+category            : watercolour
+
+
+id                  : 14
+image name          : morning_walks.jpg
+title               : Morning Walks
+short description   : Alana Abdool
+full description    : This mixedMedia piece combines the earthy richness of coffee stains with the precision of black pen to create a compelling forest scene in the foreground. Behind this verdant expanse, a majestic mountain looms, shrouded in ethereal clouds that blend seamlessly with the coffee's organic textures, evoking a sense of mystery and grandeur. The interplay between the dark, detailed forest and the soft, atmospheric mountain creates a striking contrast that captures the awe-inspiring beauty of nature.
+price ($TTD)        : 375
+category            : mixedMedia
+
+
+id                  : 15
+image name          : mountain_view.jpg
+title               : Mountain View
+short description   : Alana Abdool
+full description    : This  depicts a lush forest enveloping a vast lake, its tranquil waters reflecting the rich greenery of the surrounding trees. Beyond, gently rolling mountains rise in the distance, their subtle contours blending harmoniously with the serene landscape, creating a sense of peaceful isolation and natural splendor.
+price ($TTD)        : 200
+category            : acrylic
+
+
+id                  : 16
+image name          : ovrjyd.jpg
+title               : Over Joyed
+short description   : Caiphus Moore
+full description    : In this audacious masterpiece, tribal motifs in faint black seem almost to whisper ancient secrets beneath a bold, crimson canvas. The centerpiece—a resplendent woman in regal purple—blows a grandiose, reflective bubble with an extravagant yellow wand and container, each detail dripping with opulence. The vivid interplay of colors and forms is a celebration of transcendent artistry, daringly asserting its magnificence against the backdrop of a vividly transformed canvas.
+price ($TTD)        : 2600
+category            : oil
+
+
+id                  : 17
+image name          : ovrlvd.jpg
+title               : Over Loved
+short description   : Caiphus Moore
+full description    : This enthralling creation exhibits an ethereal fusion of form and color, where a sublime nude woman, adorned with a lavish bead necklace, emerges from a beguiling haze of green and black. The deliberate paint drips cascade down the canvas, adding a touch of unrestrained elegance, while the translucent bubble and her exquisitely delineated face are the only elements daring to assert themselves against the obscured, near-phantom background. Here, the interplay of positive and negative space achieves a masterful balance, creating an enigmatic tableau where only the most captivating features stand in stark, beguiling contrast to their elusive surroundings.
+price ($TTD)        : 3400
+category            : oil
+
+
+id                  : 18
+image name          : ovryou.jpg
+title               : Over You
+short description   : Caiphus Moore
+full description    : Behold this audaciously splendid composition where a lithe yet powerfully defined woman, clad in a cerulean tank top, effortlessly conjures bubbles of ordinary hue against a variant blue background that oozes sophistication. Her majestic afro crowns her with an air of regal defiance, while the bubbles—mundane in their simplicity—float amidst the nuanced shades of blue, elevating the entire scene to a realm of understated, yet undeniable, artistic grandeur.
+price ($TTD)        : 5500
+category            : oil
+
+id                  : 19
+image name          : rodance.jpg
+title               : Rodance
+short description   : Alana Abdool
+full description    : In this charming illustration, a delightful mouse tenderly offers a flower to a curious cat, both creatures locked in a moment of mutual fascination. The scene radiates a whimsical sense of peace and gentle curiosity, capturing an endearing exchange where predator and prey share a serene, unexpected connection.
+price ($TTD)        : 300
+category            : penAndInk
+
+
+id                  : 20
+image name          : slippery.jpg
+title               : Slippery
+short description   : Alana Abdool
+full description    : This hilariously delightful scene features a soggy frog lounging in a puddle of its own slime, topped off with a banana peel perched comically on its head. The frog’s derpy expression and the absurdity of the banana hat make for a whimsical and entertaining moment.
+price ($TTD)        : 275
+category            : penAndInk
+
+
+id                  : 21
+image name          : stained_glass.jpg
+title               : Stained Glass
+short description   : Alana Abdool
+full description    : This stained glass design, brought to life with watercolor , features a vibrant array of pink flowers, green leaves, and a rich brown stem. The interplay of various tones, tints, and hues creates a dynamic and captivating pattern, transforming each element into a radiant splash of color and light, reminiscent of a kaleidoscope in bloom.
+price ($TTD)        : 400
+category            : watercolour
+
+
+id                  : 22
+image name          : stargaze_lake.jpg
+title               : Stargaze Lake
+short description   : Céléna Espinoza
+full description    : This captivating scene captures a tranquil lakeside setting where the water transitions from serene blue to warm yellow and vibrant orange, blending seamlessly into the lush forest that frames the horizon. Above, the sky echoes this gradient, moving from a fiery orange to a soft yellow and finally to a deep, tranquil blue, all under the watchful gaze of a luminous moon and twinkling stars, creating a harmonious dance of colors and celestial beauty.
+price ($TTD)        : 560
+category            : acrylic
+
+
+id                  : 23
+image name          : stipple_fish.jpg
+title               : Stipple Fish
+short description   : Alana Abdool
+full description    : A vivid portrayl of a duppy fish with its mouth agape, revealing a dramatic and intriguing expression. The large, intricately detailed fins stretch out toward the viewer, adding a dynamic sense of depth and movement to the design, capturing the fish's imposing and captivating presence.
+price ($TTD)        : 350
+category            : penAndInk
+
+
+id                  : 24
+image name          : sunset_lake.jpg
+title               : Sunset Lake
+short description   : Alana Abdool
+full description    : This landscape captures a breathtaking scene where a rugged, rocky lake is surrounded by towering trees and set against a majestic mountainous backdrop. The colors of the setting sun bathe the sky and its reflection in the lake in warm, glowing hues, creating a harmonious and tranquil atmosphere that highlights the serene beauty of the landscape.
+price ($TTD)        : 525
+category            : oil
+
+
+id                  : 25
+image name          : tea_and_flowers.jpg
+title               : Tea and Flowers
+short description   : Anonymous
+full description    : This still life composition elegantly showcases a delicate teacup and a vase brimming with pink tulips, set against the stark contrast of a black background. The white tablecloth adds a crisp, refined touch, highlighting the soft hues of the tulips and the graceful curves of the teacup, creating a timeless and sophisticated tableau.
+price ($TTD)        : 635
+category            : watercolour
+
+
+id                  : 10
+image name          : yellow_petals.jpg
+title               : Yellow Petals
+short description   : Céléna Espinoza
+full description    : This enchanting top-down view of a sunflower captures its vibrant petals in various shades, radiating warmth and vitality. The surrounding green, reminiscent of leaves, adds a magical touch, transforming the scene into a captivating burst of color that feels both grounded and ethereal.
+price ($TTD)        : 510
+category            : acrylic
