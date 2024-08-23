@@ -6,8 +6,6 @@ use App\Http\Controllers\CheckoutPaymentController;
 use App\Http\Controllers\CheckoutSuccessController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\MailController;
-// use App\Http\Controllers\subscriptions\SubscriptionController;
-// use App\Http\Controllers\subscriptions\UserSubscriptionController;
 use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
@@ -66,7 +64,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Route for stripe prebuilt checkout
     Route::post('/checkout/payment/{payment}/1', [CheckoutPaymentController::class, 'index'])->name('checkout.stripe');
 
-    // // Route for testing checkout without stripe
+    // Route for testing checkout without stripe
     Route::get('/checkout/{payment}/testing', [CheckoutPaymentController::class, 'index'])->name('checkout.success.testing');
 
     // Route for checkout successs with stripe

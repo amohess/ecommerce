@@ -14,4 +14,25 @@ class DetailController extends Controller
         // return view('pages.testing.detailspage', compact('data'));
         return view('pages.default.detailspage', compact('data'));
     }
+
+    public function showProduct($id)
+    {
+        $product = Product::find($id);
+        $category = $product->category;
+
+        // Fetch up to 4 other products with the same category, excluding the current product
+        $relatedProducts = Product::where('category', $category)
+            ->where('id', '!=', $id)
+            ->limit(4)
+            ->get();
+
+        // Fetch all categories
+        $categories = Product::distinct()->pluck('category');
+
+        return view('product.show', [
+            'product' => $product,
+            'relatedProducts' => $relatedProducts,
+            'categories' => $categories,
+        ]);
+    }
 }

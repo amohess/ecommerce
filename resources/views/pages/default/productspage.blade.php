@@ -26,14 +26,15 @@
                                 <div class="text py-3 px-3">
                                     <h3><a href="{{ $data->getLink() }}">{{ $data->title }}</a></h3>
                                     <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price">
-                                                {{-- <span class="mr-2 price-dc">$120.00</span> --}}
+                                        <div class="m-0 p-0">
+                                            <p class="text-large">
+                                            <div><b>{{ $data->short_description }}</b></div>
+                                            <div>{{ $data->category }}</div>
 
-                                                <span class="price-sale">{{ $data->getPrice() }}</span>
+                                            {{-- <span class="price-sale">${{ $data->getPrice() }}</span> --}}
                                             </p>
                                         </div>
-                                        <div class="rating">
+                                        {{-- <div class="rating">
                                             <p class="text-right">
                                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
                                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
@@ -41,14 +42,13 @@
                                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
                                                 <a href="#"><span class="ion-ios-star-outline"></span></a>
                                             </p>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <p class="bottom-area d-flex px-3">
                                         <a href="{{ route('cart.addfromstorepage', ['id' => $data->id]) }}"
-                                            class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                            class="add-to-cart text-center py-2 mr-1"><span>Purchase <i
                                                     class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="{{ $data->getLink() }}" class="buy-now text-center py-2">View<span><i
-                                                    class="ion-ios-cart ml-1"></i></span></a>
+                                        <a href="{{ $data->getLink() }}" class="buy-now text-center py-2">View</a>
                                     </p>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
 
 
                     </div>
-                    <div class="row mt-5">
+                    {{-- <div class="row mt-5">
                         <div class="col text-center">
                             <div class="block-27">
                                 <ul>
@@ -71,12 +71,12 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <div class="col-md-4 col-lg-2 sidebar">
                     <div class="sidebar-box-2">
-                        <h2 class="heading mb-4"><a href="#">Categories</a></h2>
+                        <h2 class="heading mb-4"><a href="#">MEDIUM</a></h2>
                         <ul>
                             @foreach ($category_data as $category)
                             <li><a href="{{ route('store.index', ['category' => $category]) }}">{{ $category }}</a></li>
@@ -86,45 +86,16 @@
 
 
                     <div class="sidebar-box-2">
-                        <h2 class="heading mb-4"><a href="#">Sort</a></h2>
+                        <h2 class="heading mb-4"><a href="#">SORT</a></h2>
                         <ul>
-                            <li><a href="{{ route('store.index', ['sort' => 'category']) }}">Cateogry</a></li>
+                            <li><a href="{{ route('store.index', ['sort' => 'category']) }}">Category</a></li>
                             <li><a href="{{ route('store.index', ['sort' => 'price_asc']) }}">Price (Low to High)</a>
                             </li>
                             <li><a href="{{ route('store.index', ['sort' => 'price_desc']) }}">Price (High to Low)</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="sidebar-box-2">
-                        <h2 class="heading mb-4"><a href="#">Jeans</a></h2>
-                        <ul>
-                            <li><a href="#">Shirts &amp; Tops</a></li>
-                            <li><a href="#">Dresses</a></li>
-                            <li><a href="#">Shorts &amp; Skirts</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Coats</a></li>
-                            <li><a href="#">Jeans</a></li>
-                            <li><a href="#">Sleeveless</a></li>
-                            <li><a href="#">Trousers</a></li>
-                            <li><a href="#">Winter Coats</a></li>
-                            <li><a href="#">Jumpsuits</a></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-box-2">
-                        <h2 class="heading mb-2"><a href="#">Bags</a></h2>
-                        <h2 class="heading mb-2"><a href="#">Accessories</a></h2>
-                    </div>
-                    <div class="sidebar-box-2">
-                        <h2 class="heading mb-4"><a href="#">Shoes</a></h2>
-                        <ul>
-                            <li><a href="#">Nike</a></li>
-                            <li><a href="#">Addidas</a></li>
-                            <li><a href="#">Skechers</a></li>
-                            <li><a href="#">Jackets</a></li>
-                            <li><a href="#">Coats</a></li>
-                            <li><a href="#">Jeans</a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>

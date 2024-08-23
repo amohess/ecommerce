@@ -21,12 +21,11 @@ phpMyAdmin
 
 
 PENDING TASKS - https://drive.google.com/drive/u/1/folders/1d0QkUry3lyVn-WxEOwiXCkdUK6beGAkt
-O Change Products to art pieces
-O Customise template
-    -> C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\resources\views\components\core\products-filter.blade.php
-    -> C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\resources\views\pages\default\productspage.blade.php
-O Add advanced functionalities
+X Change Products to art pieces
+X Customise template
+X Add advanced functionalities
     > PENDING
+    X Gamification using coupon codes
     X Chatbot
     X Order history and order details
     X Search, sort, filter
@@ -38,14 +37,4 @@ O Add advanced functionalities
         O Reviews and ratings
         O Loyalty points
         O Subscriptions
-    > COMPLETED
-    0 Gamification using coupon codes (done but needs final touches)
 O Change template (maybe)
-
-
-
-
-Change images here:
-C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\public\template_default\images
-For this page:
-C:\Users\Aaryan\Documents\CTS\programming_UP\dev\example-app\resources\views\pages\default\homepage.blade.php

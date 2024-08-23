@@ -115,7 +115,7 @@
                         </p> --}}
                     </div>
                     <p class="text-center"><a href="{{ route('checkout.index') }}"
-                            class="btn btn-primary py-3 px-4">Proceed to
+                            class="btn btn-black py-3 px-4">Proceed to
                             Checkout</a></p>
                 </div>
             </div>

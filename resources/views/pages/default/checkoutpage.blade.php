@@ -22,16 +22,17 @@
                             <div class="w-100"></div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="country">State / Country</label>
+                                    <label for="country">Country</label>
                                     <div class="select-wrap">
                                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                                         <select name="" id="" class="form-control">
-                                            <option value="">France</option>
-                                            <option value="">Italy</option>
-                                            <option value="">Philippines</option>
-                                            <option value="">South Korea</option>
-                                            <option value="">Hongkong</option>
-                                            <option value="">Japan</option>
+                                            <option value="">Trinidad and Tobago</option>
+                                            <option value="">Barbados</option>
+                                            <option value="">The Bahamas</option>
+                                            <option value="">Dominican Republic</option>
+                                            <option value="">Jamaica</option>
+                                            <option value="">Saint Lucia</option>
+                                            <option value="">Guyana</option>
                                         </select>
                                     </div>
                                 </div>
@@ -59,7 +60,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="postcodezip">Postcode / ZIP</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <input type="text" class="form-control" placeholder="Optional">
                                 </div>
                             </div>
                             <div class="w-100"></div>
@@ -86,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form><!-- END -->
+                    </form>
 
 
 
@@ -153,9 +154,9 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- .col-md-8 -->
+                </div>
             </div>
         </div>
-    </section> <!-- .section -->
+    </section>
 
 </x-mylayouts.layout-default>
